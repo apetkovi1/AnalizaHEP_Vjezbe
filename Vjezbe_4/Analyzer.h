@@ -10,4 +10,5 @@ class Analyzer
   public:
   Analyzer();
   void Read();
+  void ConvertTxtToRootFile(std::string s); //ako nema using namespace treba stavit std :: string s
 };

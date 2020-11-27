@@ -15,6 +15,6 @@ int main()
   //object1->Loop();
     object1->PlotHistogram("/home/public/data/ggH125/ZZ4lAnalysis.root");
     object1->PlotHistogram("/home/public/data/qqZZ/ZZ4lAnalysis.root");
-    //object1->Chi_Square_Fit();
+    object1->Chi_Square_Fit();
 	object1->ML_Fit();
 }

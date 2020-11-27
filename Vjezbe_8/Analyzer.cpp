@@ -164,18 +164,18 @@ void Analyzer :: ML_Fit()
 	 BWQ->SetParName(6,"D_{qqZZ}");
 	 BWQ->SetParName(7,"#Gamma_{qqZZ}");
 	 BWQ->SetParName(8,"M_{qqZZ}");
-	 BWQ->SetParameter(0,2.04150e+04);
-	 BWQ->SetParameter(1,8.29916e+02);
-	 BWQ->SetParameter(2,1.24443e+02);
-	 BWQ->SetParameter(3,5.18016e+01);
-	 BWQ->SetParameter(4,-6.21281e-01);
-	 BWQ->SetParameter(5, 2.45073e-03);
-	 BWQ->SetParameter(6,4.27919e+04);
-	 BWQ->SetParameter(7,8.90531e+02);
-	 BWQ->SetParameter(8,9.08734e+01);
+	 BWQ->SetParameter(0,2.26342e+04);
+	 BWQ->SetParameter(1,9.41550e+02);
+	 BWQ->SetParameter(2,1.24370e+02);
+	 BWQ->SetParameter(3,-2.12539e+01);
+	 BWQ->SetParameter(4,3.41928e-01);
+	 BWQ->SetParameter(5,-7.42035e-04);
+	 BWQ->SetParameter(6,3.88499e+04);
+	 BWQ->SetParameter(7,7.97291e+02);
+	 BWQ->SetParameter(8,9.07895e+01);
 	 SIG_BKG->GetYaxis()->SetTitle("Events");
 	 SIG_BKG->GetXaxis()->SetTitle("m/GeV");
-	 SIG_BKG->SetTitle("Higgs_mass_experiment");
+	 SIG_BKG->SetTitle("Higgs_mass_ML");
 	 SIG_BKG->Fit(BWQ,"l");
 	 plot->SaveAs("ML_Fit.pdf");
 }

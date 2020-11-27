@@ -176,7 +176,7 @@ void Analyzer :: ML_Fit()
 	 SIG_BKG->GetYaxis()->SetTitle("Events");
 	 SIG_BKG->GetXaxis()->SetTitle("m/GeV");
 	 SIG_BKG->SetTitle("Higgs_mass_experiment");
-	 SIG_BKG->Fit(BWQ);
+	 SIG_BKG->Fit(BWQ,"l");
 	 plot->SaveAs("ML_Fit.pdf");
 }
 

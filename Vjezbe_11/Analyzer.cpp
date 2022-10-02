@@ -115,7 +115,7 @@ void Analyzer :: confidence_belt()
 	t1->Draw("SAME");
 	t2->Draw("SAME");
 	belt->SaveAs("CP_belt.pdf");
-		
+        belt->SaveAs("CP_belt.root");
 }
 void Analyzer :: Game()
 {

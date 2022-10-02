@@ -57,7 +57,7 @@ void ElementaryParticle :: bosonDecay(ElementaryParticle object1, ElementaryPart
 	 r = rand() % 1001; //random broj između 0 i 1000
 	 if(r<=214)
 	 {
-		object1.ime=object2.ime="W bozon";
+		object1.ime=object2.ime="W_bozon";
 		object1.jeli_bozon=object2.jeli_bozon=true;
 		object1.masa=object2.masa=80.38;
 		for(i=1;i<=3;i++) // random generiranje kolicine gibanja
@@ -70,7 +70,7 @@ void ElementaryParticle :: bosonDecay(ElementaryParticle object1, ElementaryPart
 	 }
 	 else if(r>214 && r<=278)
 	 {
-	    object1.ime=object2.ime="tau lepton";
+	    object1.ime=object2.ime="tau_lepton";
 		object1.jeli_bozon=object2.jeli_bozon=false; 
 		object1.masa=object2.masa=1.78;
 		for(i=1;i<=3;i++) // random generiranje kolicine gibanja
@@ -82,7 +82,7 @@ void ElementaryParticle :: bosonDecay(ElementaryParticle object1, ElementaryPart
 	 }
 	 else if(r>278 && r<=304)
 	 {
-		object1.ime=object2.ime="Z bozon";
+		object1.ime=object2.ime="Z_bozon";
 		object1.jeli_bozon=object2.jeli_bozon=true; 
 		object1.masa=object2.masa=91.19;
 		for(i=1;i<=3;i++) // random generiranje kolicine gibanja
@@ -94,8 +94,8 @@ void ElementaryParticle :: bosonDecay(ElementaryParticle object1, ElementaryPart
 	 }
 	 else
 	 {
-		object1.ime="b kvark";
-		object2.ime="anti-b kvark";
+		object1.ime="b_kvark";
+		object2.ime="anti_b_kvark";
 		object1.masa=object2.masa=4.18;
 		object1.jeli_bozon=object2.jeli_bozon=false;
 		for(i=1;i<=3;i++) // random generiranje kolicine gibanja
@@ -113,7 +113,7 @@ void ElementaryParticle :: bosonDecay(ElementaryParticle object1, ElementaryPart
 		//cout<<"Cetverovektor kolicine gibanja za "<< object2.ime<<" je: ("<<object2.P[0]<<", "<<object2.P[1]<<", "<<object2.P[2]<<", "<<object2.P[3]<<") GeV"<<endl;
 		ofstream file;
         file.open ("analysis.txt",std::ios_base::app); //svaki put dodajem podatke u analysis.txt pa stavim app (append) jer inace izbrise podatke za prethodni Higgsov bozon
-        file <<ime<<"      "<<object1.ime<<"      "<<object1.P[0]<<"  "<<object1.P[1]<<"  "<<object1.P[2]<<"  "<<object1.P[3]<<"  "<<object2.ime<<"      "<<object2.P[0]<<"  "<<object2.P[1]<<"  "<<object2.P[2]<<"  "<<object2.P[3]<<endl;
+        file <<ime<<"      "<<object1.ime<<"      "<<object1.P[0]<<"  "<<object1.P[1]<<"  "<<object1.P[2]<<"  "<<object1.P[3]<<"  "<<sqrt(object1.P[1]*object1.P[1]+object1.P[2]*object1.P[2])<<"  "<<object2.ime<<"      "<<object2.P[0]<<"  "<<object2.P[1]<<"  "<<object2.P[2]<<"  "<<object2.P[3]<<"  "<<sqrt(object2.P[1]*object2.P[1]+object2.P[2]*object2.P[2])<<endl;
         file.close();
 	}
 		

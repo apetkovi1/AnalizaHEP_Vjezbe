@@ -51,7 +51,7 @@ void Analyzer :: ConvertTxtToRootFile(string s)
    tree->Branch("pz1",&pz1,"pz1");
    tree->Branch("pt1",&pt1,"pt1");
    tree->Branch("DecayParticle_2",&DecayParticle_2,"DecayParticle_2");
-   tree->Branch("E1",&E2,"E2");
+   tree->Branch("E2",&E2,"E2");
    tree->Branch("px2",&px2,"px2");
    tree->Branch("py2",&py2,"py2");
    tree->Branch("pz2",&pz2,"pz2");

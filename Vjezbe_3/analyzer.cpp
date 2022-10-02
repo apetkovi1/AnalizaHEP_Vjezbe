@@ -11,10 +11,10 @@ int main()
 	srand (time(NULL));
     //ElementaryParticle Higgsov_bozon("Higgsov bozon",125,true);
 	ElementaryParticle Higgsov_bozon[n];
-    std::fill(Higgsov_bozon, Higgsov_bozon+n, ElementaryParticle("Higgsov bozon",125,true)); //kreiram polje objekata
+    std::fill(Higgsov_bozon, Higgsov_bozon+n, ElementaryParticle("Higgsov_bozon",125,true)); //kreiram polje objekata
     //ElementaryParticle Top_kvark("Top kvark",173,false);
 	//ElementaryParticle *pokZ;
-	//pokZ=new ElementaryParticle("Z bozon",91,true);
+	//pokZ=new ElementaryParticle("Z_bozon",91,true);
 	ElementaryParticle decayParticle_1;
 	ElementaryParticle decayParticle_2;
 	//cout << pokZ->ime<<" "<< pokZ->masa <<"Gev "<< pokZ->jeli_bozon <<endl;

@@ -6,7 +6,7 @@ int main ()
 	//A->Loop_b();
 	//A->Loop_signal();
 	//A->Plot_histogram();
-	//A->TMVATraining();
-	A->plot();
+	A->TMVATraining();
+	//A->plot();
     return 0;
 }

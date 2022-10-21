@@ -1,0 +1,12 @@
+total 8
+-rw-r--r--. 1 apetkovic apetkovic  0 Lis 13 15:16 output_3.txt
+-rw-r--r--. 1 apetkovic apetkovic 42 Lis 13 15:16 Zadatak_3.sh
+-rw-r--r--. 1 apetkovic apetkovic 33 Lis 13 15:11 Zadatak_2.txt
+total 40
+-rwxr-xr-x. 1 apetkovic apetkovic 14328 Lis 13 20:49 analyze
+-rw-r--r--. 1 apetkovic apetkovic   787 Lis 13 20:48 Zadatak_6.cpp
+-rw-r--r--. 1 apetkovic apetkovic   196 Lis 13 19:50 Zadatak_5.cpp
+-rw-r--r--. 1 apetkovic apetkovic    99 Lis 13 19:43 Zadatak_4.cpp
+-rw-r--r--. 1 apetkovic apetkovic   198 Lis 13 15:16 output_3.txt
+-rwxr-xr-x. 1 apetkovic apetkovic    42 Lis 13 15:16 Zadatak_3.sh
+-rw-r--r--. 1 apetkovic apetkovic    33 Lis 13 15:11 Zadatak_2.txt
